@@ -73,7 +73,7 @@ ol {
   color: #2e2f42;
 }
 
-.header-navi-link {
+.header-navi {
   display: flex;
   align-items: center;
   gap: 40px;
@@ -87,11 +87,23 @@ ol {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
+  position: relative;
 }
 
 .navi-link:hover,
 .navi-link:focus {
   color: #404bbf;
+}
+
+.navi-link.studio::after {
+  content: "";
+  border-radius: 2px;
+  left: 0;
+  bottom: -5px;
+  width: 48px;
+  height: 4px;
+  position: absolute;
+  background: #404bbf;
 }
 
 .adres {
