@@ -392,6 +392,18 @@ ol {
 }
 
 .overlay {
+}
+
+.picture {
+}
+
+.portfolio-list:hover .overlay {
+  transform: translateY(-100%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay-p {
   position: absolute;
   top: 0;
   left: 0;
@@ -401,13 +413,6 @@ ol {
   background-color: #4d5ae5;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px 32px;
-}
-
-.portfolio-list:hover .overlay {
-  transform: translateY(0);
-}
-
-.overlay-p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
