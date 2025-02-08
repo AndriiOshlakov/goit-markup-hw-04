@@ -69,6 +69,7 @@ ol {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-right: 76px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navi-logo .navi-logo-text {
@@ -78,7 +79,6 @@ ol {
 .navi-logo:hover,
 .navi-logo:focus {
   color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-navi {
@@ -96,12 +96,12 @@ ol {
   padding: 24px 0;
   position: relative;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navi-link:hover,
 .navi-link:focus {
   color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navi-link.studio {
@@ -140,12 +140,12 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adres-link:hover,
 .adres-link:focus {
   color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* MAIN  */
@@ -347,6 +347,10 @@ ol {
   cursor: pointer;
 }
 
+.icon-link:focus {
+  background-color: #404bbf;
+}
+
 /*  PORTFOLIO  */
 
 .portfolio-title {
@@ -498,7 +502,9 @@ ol {
   justify-content: flex-start;
   margin-top: 16px;
 }
-.icon-link.down:hover,
+.icon-link.down:hover {
+  background-color: #31d0aa;
+}
 .icon-link.down:focus {
   background-color: #31d0aa;
 }
