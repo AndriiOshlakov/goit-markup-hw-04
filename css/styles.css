@@ -46,6 +46,8 @@ ol {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -97,6 +99,10 @@ ol {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.navi-link.studio {
+  color: #404bbf;
+}
+
 .navi-link.studio::after,
 .navi-link.studio::after {
   color: #404bbf;
@@ -108,8 +114,7 @@ ol {
   height: 4px;
   position: absolute;
   background: #404bbf;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adres {
@@ -125,31 +130,35 @@ ol {
 
 .adres-link {
   display: block;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
+
 .adres-link:hover,
 .adres-link:focus {
   color: #404bbf;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* MAIN  */
 /*   HERO  */
+
 .hero {
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: block;
   align-items: center;
   height: 600px;
+  max-width: 1440px;
   padding: 188px 0;
   border: 1px solid #000;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -187,7 +196,8 @@ ol {
 }
 .hero-button:hover,
 .hero-button:focus {
-  background: #404bbf;
+  background-color: #404bbf;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*  ADVANTAGES  */
@@ -311,7 +321,11 @@ ol {
   margin-top: 8px;
 }
 
-.icon-list {
+.icon {
+  fill: #f4f4fd;
+}
+
+.icon-link {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -320,12 +334,11 @@ ol {
   align-items: center;
   justify-content: center;
 }
-.icon-list:hover,
-.icon-list:focus {
-  background-color: #31d0aa;
+.icon-link:hover,
+.icon-link:focus {
+  background-color: #404bbf;
   cursor: pointer;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*  PORTFOLIO  */
@@ -363,8 +376,7 @@ ol {
 .portfolio-list:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-app {
@@ -399,8 +411,8 @@ ol {
 
 .portfolio-list:hover .overlay {
   transform: translateY(-100%);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay-p {
@@ -429,7 +441,12 @@ ol {
 
 .footer-info {
   display: flex;
+  align-items: baseline;
   gap: 120px;
+}
+
+.box-logo-p {
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -462,6 +479,10 @@ ol {
 }
 .footer-txt {
   color: #fff;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 
 .social-icons.icons-footer {
@@ -471,4 +492,9 @@ ol {
   gap: 16px;
   justify-content: flex-start;
   margin-top: 16px;
+}
+.icon-link.down:hover,
+.icon-link.down:focus {
+  background-color: #31d0aa;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
