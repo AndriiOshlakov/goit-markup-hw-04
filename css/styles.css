@@ -342,13 +342,10 @@ ol {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-link:hover,
-.icon-link:focus {
+.icon-link:focus,
+.icon-link:active {
   background-color: #404bbf;
   cursor: pointer;
-}
-
-.icon-link:focus {
-  background-color: #404bbf;
 }
 
 /*  PORTFOLIO  */
@@ -502,9 +499,8 @@ ol {
   justify-content: flex-start;
   margin-top: 16px;
 }
-.icon-link.down:hover {
-  background-color: #31d0aa;
-}
-.icon-link.down:focus {
+.icon-link.down:hover,
+.icon-link.down:focus,
+.icon-link.down:active {
   background-color: #31d0aa;
 }
